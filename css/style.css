@@ -1,0 +1,183 @@
+:root {
+  --white-color: #fff;
+  --primary-color: #2D314D;
+  --text-color: #9597A5;
+  --button-color: #5267DF;
+  --hover-color:#FA5959;
+}
+
+/* GLOBAL STYLE */
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 3px dashed var(--hover-color);
+  outline-offset: 3px;
+}
+
+*::before,
+ ::after {
+   box-sizing: border-box;
+ }
+
+html {
+  height: 100%;
+  scroll-behavior: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Public Sans', 'Arial', sans-serif;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  white-space: nowrap;
+  min-width: 163px;
+  padding: 8px 36px 8px 33px;
+  border-radius: 22px;
+  background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* SITE-HEADER */
+.site-header {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  z-index: 50;
+  background-color: var(--white-color);
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__logo-link {
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.site-header__logo {
+  width: 139px;
+  height: 20px;
+}
+
+.sitenav {
+  margin-left: 250px;
+}
+
+.sitenav__list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-right: 35px;
+  list-style: none;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.sitenav__link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.10px;
+  color: var(--text-color);
+}
+
+.site-header__btn {
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+
+/* MAIN-CONTENT */
+.main-content {
+  flex-grow: 1;
+}
+
+
+/* SITE-HERO */
+.site-hero {
+  padding-top: 170px;
+  padding-bottom: 170px;
+  background-image: url("../img/hero-bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 522px) -250px;
+}
+
+.site-hero__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.site-hero__block {
+  width: 450px;
+}
+
+.site-hero__title {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 27px;
+  font-size: 56px;
+  font-weight: 100;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: var(--primary-color);
+}
+
+.site-hero__text {
+  margin: 0;
+  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28px;
+  color: var(--text-color);
+}
+
+.site-hero__btn {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.site-hero__img {
+  position: absolute;
+  display: block;
+  width: 728px;
+  height: 900px;
+  right: -230px;
+  z-index: 30;
+}
