@@ -3,7 +3,8 @@
   --primary-color: #2D314D;
   --text-color: rgba(149, 151, 165, 1);
   --body-color: #FAFAFA;
-  --hover-color:#FA5959;
+  --hover-color: #30C88F;
+  ;
 }
 
 /* GLOBAL STYLE */
@@ -145,6 +146,10 @@ body {
   line-height: 16px;
   letter-spacing: -0.10px;
   color: var(--text-color);
+}
+
+.sitenav__link:hover {
+
 }
 
 .site-header__btn {
@@ -345,15 +350,14 @@ body {
 .section-articles__item-img {
   display: block;
   width: 255px;
-  height: 250px;
+  height: 200px;
 }
 
 .item-text-block {
   width: 207px;
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 24px;
 }
 
 .item-text-block__title {
@@ -393,19 +397,121 @@ body {
   background-color: var(--primary-color);
 }
 .site-footer__container {
+  display: flex;
+  align-items: center;
 }
 
-.site-footer__block-left {
-}
 .block-left {
+  margin-right: 130px;
 }
+
+.site-footer__logo-link {
+  display: inline-block;
+  transition: opacity 0.3s ease;
+  margin-bottom: 55px;
+}
+
+.site-footer__logo-link:hover {
+  opacity: 0.8;
+}
+
+.site-footer__logo-link:active {
+  opacity: 0.6;
+}
+
 .site-footer__logo {
+  display: block;
+  width: 139px;
+  height: 20px;
 }
+
 .block-left__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
-.block-left__item {
+
+.block-left__item:not(:last-child) {
+  margin-right: 13px;
 }
+
 .site-footer__social-link {
+  display: flex;
+  color: var(--white-color);
 }
+
+.site-footer__social-link:hover {
+  color: var(--hover-color);
+}
+
+.site-footer__social-link:active {
+  opacity: 0.6;
+}
+
 .site-footer-social-img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  display: block;
+
+}
+
+
+.site-footer__list-link {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-right: auto;
+  list-style: none;
+}
+
+.links-item {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+.links-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.site-footer__links {
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: -0.23px;
+  text-decoration: none;
+  color: var(--white-color);
+  transition: color 0.3s ease;
+}
+
+.site-footer__links:hover {
+  color: var(--hover-color);
+}
+
+.site-footer__links:active {
+  opacity: 0.6;
+}
+
+.site-footer__links:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.site-footer__btn-block {
+text-align: right;
+}
+
+.site-footer__btn {
+  margin-left: auto;
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.site-footer__copy-text {
+  margin: 0;
+  color: rgba(255, 255, 255, .5);
 }
