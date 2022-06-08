@@ -112,8 +112,8 @@ body {
 
 .sitenav__item {
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 33px;
+  padding-top: 33px;
+  padding-bottom: 38px;
   cursor: pointer;
 }
 
@@ -149,7 +149,7 @@ body {
 }
 
 .sitenav__link:hover {
-
+  color: var(--primary-color);
 }
 
 .site-header__btn {
@@ -228,9 +228,6 @@ body {
   padding-top: 96px;
   padding-bottom: 90px;
   background-color: #F4F5F7;
-}
-
-.section-feature__container {
 }
 
 .section-feature__text-block {
