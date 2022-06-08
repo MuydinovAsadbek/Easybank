@@ -1,7 +1,7 @@
 :root {
   --white-color: #fff;
   --primary-color: #2D314D;
-  --text-color: #9597A5;
+  --text-color: rgba(149, 151, 165, 1);
   --body-color: #FAFAFA;
   --hover-color:#FA5959;
 }
@@ -304,4 +304,109 @@ body {
   line-height: 26px;
   letter-spacing: -0.25px;
   color: var(--text-color);
+}
+
+
+/* SECTION-ARTICLES */
+.section-articles {
+  padding-top: 84px;
+  padding-bottom: 80px;
+  background-color: #FAFAFA;
+}
+
+.section-articles__title {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 64px;
+  letter-spacing: -0.71px;
+  color: var(--primary-color);
+}
+
+.section-articles__list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.section-articles__item {
+  width: 255px;
+  background-color: var(--white-color);
+  border-radius: 5px;
+}
+
+.section-articles__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-articles__item-img {
+  display: block;
+  width: 255px;
+  height: 250px;
+}
+
+.item-text-block {
+  width: 207px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-text-block__title {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: -0.15px;
+  color: var(--text-color);
+}
+
+.item-text-block__link {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: -0.28px;
+  color: var(--primary-color);
+}
+
+.item-text-block__text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.20px;
+  color: var(--text-color);
+}
+
+
+/* SITE-FOOTER */
+.site-footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: var(--primary-color);
+}
+.site-footer__container {
+}
+
+.site-footer__block-left {
+}
+.block-left {
+}
+.site-footer__logo {
+}
+.block-left__list {
+}
+.block-left__item {
+}
+.site-footer__social-link {
+}
+.site-footer-social-img {
 }
